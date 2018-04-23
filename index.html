@@ -1,34 +1,101 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.parallax {
-    /* The image used */
-    background-image: url("https://espntheundefeated.files.wordpress.com/2017/05/nba-logo.png?w=700&quality=90&strip=info");
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ONE</title>
 
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
 }
 </style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
 </head>
+
 <body>
 
-<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
-
-<div class="parallax"></div>
-
-<div style="height:1000px;background-color:red;font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2015-04-20.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			<span class="keyword">Boy name = XXX</span><br />
+			<span class="keyword">Girl name = XXXX</span><br />
+			<span class="keyword">Fall in love river. </span><br />
+			<span class="comments">// The boy loves the girl;</span><br />
+			<span class="comments">// The girl loves the boy;</span><br />
+			<span class="keyword">They love each other.</span><br />
+			<span class="comments">// As time goes on；</span><br />
+			<span class="keyword">The boy can not be separated from the girl.</span><br />
+			<span class="comments">// At the same time;</span><br />
+			<span class="keyword">The girl can not be separated from the boy.</span><br />
+			<span class="comments">// Both wind and snow all over the sky.</span><br />
+			<span class="keyword">The boy is very happy</span>;<br />
+			<span class="keyword">The girl is also very happy</span>.<br />
+			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+			<span class="placeholder"/>The boy has but one dream;<br />
+			<span class="placeholder">The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			<span class="keyword">I want to say:</span><br />
+			<span class="keyword">XXX, I love you forever;</span><br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的，这是我们相爱在一起的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你直到永永远远。<br/>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2015, 3, 20);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="http://music.163.com/outchain/player?type=2&id=38019747&auto=1&height=66"></iframe>
 </body>
 </html>
