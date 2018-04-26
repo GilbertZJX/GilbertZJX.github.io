@@ -1,101 +1,82 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" >
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ONE</title>
+  <meta charset="UTF-8">
+  <title>Simple Parallax with Fullpage JS</title>
 
-<style type="text/css">
-@font-face {
-	font-family: digit;
-	src: url('digital-7_mono.ttf') format("truetype");
-}
-</style>
 
-<link href="css/default.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/garden.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
 <body>
 
-<div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">/**</span><br />
-			<span class="space"/><span class="comments">*2015-04-20.</span><br />
-			<span class="space"/><span class="comments">*/</span><br />
-			<span class="keyword">Boy name = XXX</span><br />
-			<span class="keyword">Girl name = XXXX</span><br />
-			<span class="keyword">Fall in love river. </span><br />
-			<span class="comments">// The boy loves the girl;</span><br />
-			<span class="comments">// The girl loves the boy;</span><br />
-			<span class="keyword">They love each other.</span><br />
-			<span class="comments">// As time goes on；</span><br />
-			<span class="keyword">The boy can not be separated from the girl.</span><br />
-			<span class="comments">// At the same time;</span><br />
-			<span class="keyword">The girl can not be separated from the boy.</span><br />
-			<span class="comments">// Both wind and snow all over the sky.</span><br />
-			<span class="keyword">The boy is very happy</span>;<br />
-			<span class="keyword">The girl is also very happy</span>.<br />
-			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
-			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
-			<span class="placeholder"/>The boy has but one dream;<br />
-			<span class="placeholder">The boy wants the girl could well have been happy.</span><br />
-			<br>
-			<br>
-			<span class="keyword">I want to say:</span><br />
-			<span class="keyword">XXX, I love you forever;</span><br />
-		</div>
-		<div id="loveHeart">
-			<canvas id="garden"></canvas>
-			<div id="words">
-				<div id="messages">
-					亲爱的，这是我们相爱在一起的时光。
-					<div id="elapseClock"></div>
-				</div>
-				<div id="loveu">
-					爱你直到永永远远。<br/>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+    <div id="homepage">
+      <section id="landing" class="background section">
+        <div class="content-wrapper bgpaper centered">
+          <div class="logo">
+            <p class="content-subtitle">
+              Days Since</p>
+            <p class="content-subtitle">
+              第一次遇到你</p>
+            <h1 id="title">365 Days</h1>
+            <p class="content-subtitle">
+            Apr 27, 2017</p>
+          </div>
+        </div>
+      </section>
+      <section class="background section" id="about">
+        <div class="content-wrapper centered">
+          <div class="container">
 
-<script type="text/javascript">
-var offsetX = $("#loveHeart").width() / 2;
-var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-together.setFullYear(2015, 3, 20);
-together.setHours(0);
-together.setMinutes(0);
-together.setSeconds(0);
-together.setMilliseconds(0);
+            <p class="content-subtitle">
+              Days Since</p>
+            <p class="content-subtitle">
+              第一次遇到你</p>
+            <h1 id="title">365 Days</h1>
+            <p class="content-subtitle">
+            Apr 27, 2017</p>
 
-if (!document.createElement('canvas').getContext) {
-	var msg = document.createElement("div");
-	msg.id = "errorMsg";
-	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-	document.body.appendChild(msg);
-	$("#code").css("display", "none")
-	$("#copyright").css("position", "absolute");
-	$("#copyright").css("bottom", "10px");
-	document.execCommand("stop");
-} else {
-	setTimeout(function () {
-		startHeartAnimation();
-	}, 5000);
+          </div>
+        </div>
+      </section>
+      <section id="work" class="background section">
+        <div class="content-wrapper centered">
+          <div class="container">
+              <h3 class="content-title">lacinia odio sem nec elit</h3>
+              <p class="content-subtitle">
+        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="background section">
+        <div class="content-wrapper centered">
+          <div class="container">
+              <h3 class="content-title">lacinia odio sem nec elit</h3>
+              <p class="content-subtitle">
+        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris</p>
+          </div>
+        </div>
+      </section>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/jquery.easings.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/vendors/scrolloverflow.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js'></script>
 
-	timeElapse(together);
-	setInterval(function () {
-		timeElapse(together);
-	}, 500);
 
-	adjustCodePosition();
-	$("#code").typewriter();
-}
-</script>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="http://music.163.com/outchain/player?type=2&id=38019747&auto=1&height=66"></iframe>
+
+    <script  src="js/index.js"></script>
+
+
+
+
 </body>
+
 </html>
