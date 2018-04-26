@@ -39,20 +39,29 @@ p{
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .section:nth-child(1){
-	z-index: 10;
+  background-image: url("../Images/499438109.jpg");
+  z-index: 10;
 }
 .section:nth-child(2){
-  background-image: url(https://images.unsplash.com/photo-1482263231623-6121096b0d3f?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=);
+  background-image: url("../Images/71984067.jpg");
 	z-index: 9;
 }
 .section:nth-child(3){
-  background-image: url(https://images.unsplash.com/photo-1440549770084-4b381ce9d988?dpr=1&auto=compress,format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=);
+  background-image: url("../Images/198666994.jpg");
 	z-index: 8;
 }
 .section:nth-child(4){
+  background-image: url("../Images/807405647.jpg");
 	z-index: 7;
 }
+
+.section:nth-child(5){
+  background-image: url("../Images/1100103734.jpg");
+	z-index: 6;
+}
+
 .section.fp-completely.active{
 	z-index: 20;
 }
