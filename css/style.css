@@ -12,23 +12,22 @@
   will-change: transform;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: all 0s cubic-bezier(0.22, 0.44, 0, 1);
-  transition: all 0s cubic-bezier(0.22, 0.44, 0, 1);
+  -webkit-transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+  transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
 }
 #landing .content-wrapper{
-  color:#fff;
+  color:#333;
 }
 .content-title {
   font-size: 4vh;
   line-height: 1.4;
 }
 p{
-	font-size: 4vh;
+	font-size: 2vh;
 }
 #title{
-	font-size: 15vh;
-  /* font-weight: bold; */
-	color: white;
+	font-size: 4vh;
+	color: #666;
 	margin: 20px 0 0 0;
 }
 .section{
@@ -40,53 +39,20 @@ p{
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* .section:nth-child(1){
-  background-image: url("../Images/499438109.jpg");
-  z-index: 10;
+.section:nth-child(1){
+	z-index: 10;
 }
 .section:nth-child(2){
-  background-image: url("../Images/71984067.jpg");
+  background-image: url(https://images.unsplash.com/photo-1482263231623-6121096b0d3f?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=);
 	z-index: 9;
 }
 .section:nth-child(3){
-  background-image: url("../Images/198666994.jpg");
+  background-image: url(https://images.unsplash.com/photo-1440549770084-4b381ce9d988?dpr=1&auto=compress,format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=);
 	z-index: 8;
 }
 .section:nth-child(4){
-  background-image: url("../Images/807405647.jpg");
 	z-index: 7;
 }
-
-.section:nth-child(5){
-  background-image: url("../Images/1100103734.jpg");
-	z-index: 6;
-}
-
-.section:nth-child(6){
-  background-image: url("../Images/1205450208.jpg");
-	z-index: 5;
-}
-
-.section:nth-child(7){
-  background-image: url("../Images/1220671748.jpg");
-	z-index: 4;
-}
-
-.section:nth-child(8){
-  background-image: url("../Images/1453485368.jpg");
-	z-index: 3;
-}
-
-.section:nth-child(9){
-  background-image: url("../Images/1218478339.jpg");
-	z-index: 2;
-}
-
-.section:nth-child(10){
-  background-image: url("../Images/2019234216.jpg");
-	z-index: 1;
-} */
-
 .section.fp-completely.active{
 	z-index: 20;
 }
