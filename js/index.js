@@ -4,12 +4,12 @@
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 2000,
-    				anchors: ['home', 'about-us', 'what-we-do', 'our-work'],
-    				sectionsColor: ['#f2f2f2', '#1BBC9B', '#7E8F7C', '#C63D0F'],
+    				anchors: ['home', 'about-us', 'what-we-do', 'our-work', 'contact1'],
+    				sectionsColor: ['#f2f2f2', '#1BBC9B', '#7E8F7C', '#C63D0F','#7E8F7C'],
             verticalCentered: false,
-    				navigation: true,
-    				navigationPosition: 'right',
-    				navigationTooltips: ['Eureka Mediatech', 'About Us', 'What we do','Our Work'],
+    				// navigation: true,
+    				// navigationPosition: 'right',
+    				// navigationTooltips: ['Eureka Mediatech', 'About Us', 'What we do','Our Work'],
     				responsiveWidth: 900,
             onLeave: function(index, nextIndex, direction){
                   if(direction == "up"){
