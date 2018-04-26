@@ -91,11 +91,11 @@ p{
 	z-index: 20;
 }
 .section.active .content-wrapper{
-  transform:translateY(-20vh);
+  transform:translateY(-50vh);
 	transition: all 5s cubic-bezier(0.22, 0.44, 0, 1) !important;
 }
 .section.fp-completely .content-wrapper{
-	transform:translateY(20vh);
+	transform:translateY(50vh);
 	transition: all 5s cubic-bezier(0.22, 0.44, 0, 1) !important;
 }
 .section.fp-completely.active .content-wrapper{
