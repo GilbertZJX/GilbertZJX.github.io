@@ -71,11 +71,6 @@ p{
 }
 
 .section:nth-child(8){
-  background-image: url("../Images/1218478339.jpg");
-	z-index: 3;
-}
-
-.section:nth-child(9){
   background-image: url("../Images/2019234216.jpg");
 	z-index: 2;
 }
