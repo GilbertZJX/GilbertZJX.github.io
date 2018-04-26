@@ -60,7 +60,25 @@ p{
   background-image: url("../Images/1100103734.jpg");
 	z-index: 6;
 }
+.section:nth-child(6){
+  background-image: url("../Images/1205450208.jpg");
+	z-index: 5;
+}
 
+.section:nth-child(7){
+  background-image: url("../Images/1220671748.jpg");
+	z-index: 4;
+}
+
+.section:nth-child(8){
+  background-image: url("../Images/1218478339.jpg");
+	z-index: 3;
+}
+
+.section:nth-child(9){
+  background-image: url("../Images/2019234216.jpg");
+	z-index: 2;
+}
 
 .section.fp-completely.active{
 	z-index: 20;
