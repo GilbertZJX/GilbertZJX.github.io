@@ -2,8 +2,8 @@
           $('#homepage').fullpage({
             scrollingSpeed: 2000,
             autoScrolling: true,
-            // fitToSection: true,
-            // fitToSectionDelay: 2000,
+            fitToSection: true,
+            fitToSectionDelay: 2000,
     				anchors: ['遇见', '聊天', '电影','礼物', '济南', '槟城','约饭','我房间','面包','表白'],
     				sectionsColor: ['#f2f2f2', '#1BBC9B', '#7E8F7C', '#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F'],
             verticalCentered: true,
