@@ -7,9 +7,9 @@
     				anchors: ['遇见', '聊天', '电影','礼物', '济南', '槟城','约饭','我房间','面包','表白'],
     				sectionsColor: ['#f2f2f2', '#1BBC9B', '#7E8F7C', '#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F', '#C63D0F'],
             verticalCentered: false,
-    				navigation: true,
-    				navigationPosition: 'right',
-    				navigationTooltips: ['遇见', '聊天', '电影','礼物', '济南', '槟城','约饭','我房间','面包','表白'],
+    				// navigation: true,
+    				// navigationPosition: 'right',
+    				// navigationTooltips: ['遇见', '聊天', '电影','礼物', '济南', '槟城','约饭','我房间','面包','表白'],
     				responsiveWidth: 900,
             onLeave: function(index, nextIndex, direction){
                   if(direction == "up"){

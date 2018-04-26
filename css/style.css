@@ -26,7 +26,7 @@ p{
 	font-size: 4vh;
 }
 #title{
-	font-size: 15vh;
+	font-size: 5vh;
   /* font-weight: bold; */
 	color: white;
 	margin: 20px 0 0 0;
@@ -40,7 +40,7 @@ p{
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* .section:nth-child(1){
+.section:nth-child(1){
   background-image: url("../Images/499438109.jpg");
   z-index: 10;
 }
@@ -85,7 +85,7 @@ p{
 .section:nth-child(10){
   background-image: url("../Images/2019234216.jpg");
 	z-index: 1;
-} */
+}
 
 .section.fp-completely.active{
 	z-index: 20;
