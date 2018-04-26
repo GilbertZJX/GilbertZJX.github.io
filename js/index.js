@@ -1,6 +1,6 @@
   $(document).ready(function() {
           $('#homepage').fullpage({
-            scrollingSpeed: 2000,
+            scrollingSpeed: 200,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 2000,
